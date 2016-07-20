@@ -1,0 +1,36 @@
+<h2>
+    User Table
+</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>User ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Date Joined</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @users.each do |user| %>
+        <tr>
+            <td>
+                <%= user[:user_id] %>
+            </td>
+            <td>
+                <%= user[:name] %>
+            </td>
+            <td>
+                <%= user[:email] %>
+            </td>
+            <td>
+                <%= user[:address] %>
+            </td>
+            <td>
+                <%= user[:date_joined] %>
+            </td>
+        </tr>
+        <% end %>
+    </tbody>
+</table>
