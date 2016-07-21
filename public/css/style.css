@@ -1,0 +1,46 @@
+
+a {
+  margin: 2%;
+  margin-left: 3%;
+}
+
+body {
+background-color: rgb(152, 10, 31);
+color: rgb(228, 191, 189);
+font-family: Verdana;
+}
+    table {
+        border-collapse: collapse;
+        width: 80%;
+        margin-left: 3%;
+    }
+    td,
+    th,
+    tr {
+        border: 1px solid rgb(228, 191, 189);
+        font-size: 15px;
+        font-family: Arial;
+    }
+
+    li {
+      display: inline-block;
+      padding: 12px 50px;
+      color: rgb(228, 191, 189);
+    }
+
+    ul {
+      border: 1px solid rgb(228, 191, 189);
+      height: 50px;
+      margin-top: 2%;
+      margin-left: 2%;
+      margin-right: 2%;
+      text-align: center;
+    }
+
+    h1, h2 {
+      margin-left: 35px;
+    }
+
+    p {
+      margin-left: 3%;
+    }

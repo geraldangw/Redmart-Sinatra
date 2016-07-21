@@ -1,0 +1,38 @@
+<h2>
+    Products
+</h2>
+
+<a href="./"> HOME </a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Product ID</th>
+            <th>Name</th>
+            <th>Brand ID</th>
+            <th>Category ID</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @products.each do |product| %>
+        <tr>
+            <td>
+                <%= product[:id] %>
+            </td>
+            <td>
+                <%= product[:name] %>
+            </td>
+            <td>
+                <%= product[:brand_id] %>
+            </td>
+            <td>
+                <%= product[:category_id] %>
+            </td>
+            <td>
+                <%= product[:price] %>
+            </td>
+        </tr>
+        <% end %>
+    </tbody>
+</table>

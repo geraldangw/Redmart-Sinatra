@@ -1,0 +1,38 @@
+<h2>
+    Purchases
+</h2>
+
+<a href="./"> HOME </a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Purchase_ID</th>
+            <th>Product_ID</th>
+            <th>User_ID</th>
+            <th>Purchase_Date</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @purchases.each do |purchase| %>
+        <tr>
+            <td>
+                <%= purchase[:id] %>
+            </td>
+            <td>
+                <%= purchase[:product_id] %>
+            </td>
+            <td>
+                <%= purchase[:user_id] %>
+            </td>
+            <td>
+                <%= purchase[:purchase_date] %>
+            </td>
+            <td>
+                <%= purchase[:status] %>
+            </td>
+        </tr>
+        <% end %>
+    </tbody>
+</table>
