@@ -15,5 +15,5 @@ end
 end
 
 (0..25).each do |v|
-    Purchases.create(user_id: Faker::Address.zip_code, product_id: Faker::Address.zip_code, purchase_date: Faker::Date.between(50.days.ago, Date.today), status: Faker::Boolean.boolean )
+    Purchases.create(users_id: rand(1..20), products_id: rand(1..30), purchase_date: Faker::Date.between(50.days.ago, Date.today), status: Faker::Boolean.boolean )
 end
