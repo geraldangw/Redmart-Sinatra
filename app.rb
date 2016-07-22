@@ -17,6 +17,29 @@ class RedmartSinatraApp < Sinatra::Base
 
   end
 
+ #  get '/users' do
+ #   @users = User.all
+ #   erb :'users/index'
+ # end
+ #
+ # get "/users/new" do
+ #   erb :'users/new'
+ # end
+ #
+ # get '/users/:id' do
+ #   @user = User.find(params[:id])
+ #   erb :'users/show'
+ # end
+ #
+ # get "/users/:id/edit" do
+ #   erb :'users/edit'
+ # end
+
+ # index => all[users]
+ # show => specific [user]
+ # edit => form to update [user]
+ # new => form to create [user]
+
   get '/products' do
     @products = Products.all
 
