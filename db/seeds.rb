@@ -2,7 +2,7 @@
 require './models/users'
 require './models/products'
 require './models/purchases'
-require 'Faker'
+require 'faker'
 
 # seeds.rb is a way of automating the population of the database with testing data.
 
