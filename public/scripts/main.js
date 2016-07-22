@@ -1,5 +1,5 @@
-function init() {
-alert("Yay");
-}
-
-window.addEventListener('click', init);
+// function init() {
+// alert("Yay");
+// }
+//
+// window.addEventListener('click', init);

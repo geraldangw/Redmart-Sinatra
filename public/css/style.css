@@ -4,6 +4,10 @@ a {
   margin-left: 3%;
 }
 
+h3, form {
+  margin-left: 3%;
+}
+
 body {
 background-color: rgb(152, 10, 31);
 color: rgb(228, 191, 189);
