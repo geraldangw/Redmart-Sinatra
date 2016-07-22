@@ -28,7 +28,7 @@ class RedmartSinatraApp < Sinatra::Base
  post "/users" do
    puts params[:user]
 
-   @new_user = User.new(params[:user])
+   @new_user = Users.new(params[:user])
 
    if @new_user.save
      #go to all user list
