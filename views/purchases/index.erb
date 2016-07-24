@@ -37,15 +37,15 @@
             <td>
                 <%= purchase[:products_id]%>
             </td>
-            <td>
+            <td class="buttons">
                 <a class="tablebutton" href="/purchases/<%=purchase[:id]%>">
                     Show
                 </a>
             </td>
-            <td>
+            <td class="buttons">
                 <a class="tablebutton" href="/purchases/<%= purchase[:id] %>/edit">Edit</a>
             </td>
-            <td>
+            <td class="buttons">
                 <form action="/purchases/<%=purchase[:id]%>" method="post">
                     <input id="delete" type="hidden" name="_method" value="Delete">
                     <input id="delete" type="submit" value="Delete">

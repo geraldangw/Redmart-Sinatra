@@ -29,15 +29,15 @@
             <td>
                 <%= product[:brand_id] %>
             </td>
-            <td>
+            <td class="buttons">
                 <a class="tablebutton" href="/products/<%=product[:id]%>">
                     Show
                 </a>
             </td>
-            <td>
+            <td class="buttons">
                 <a class="tablebutton" href="/products/<%= product[:id] %>/edit">Edit</a>
             </td>
-            <td>
+            <td class="buttons">
                 <form action="/products/<%=product[:id]%>" method="post">
                     <input id="delete" type="hidden" name="_method" value="Delete">
                     <input id="delete" type="submit" value="Delete">
