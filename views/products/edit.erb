@@ -1,0 +1,35 @@
+
+<h3>Form to edit product / EDIT Here!</h3>
+
+<form action="/products/<%=@products[:id]%>" method="post">
+  <input type="hidden" name="_method" value="put">
+
+<container class="forms">
+ <label for="name">NAME</label>
+ <input class="field" id = "name" type="text" name="product[name]" value="<%=@products[:name]%>">
+ </container>
+
+<container class="forms">
+ <label> BRAND ID
+   <input class="field" id = "email" type="text" name="product[brand_id]" value="<%=@products[:brand_id]%>">
+ </label>
+  </container>
+
+<container class="forms">
+ <label> CATEGORY ID
+   <input class="field" id = "address" type="text" name="product[category_id]" value="<%=@products[:category_id]%>">
+ </label>
+  </container>
+
+<container class="forms">
+ <label> PRICE
+   <input class="field" id = "password" type="text" name="product[price]" value="<%=@products[:price]%>">
+ </label>
+  </container>
+
+<container class="forms">
+ <input id="submit" type="submit" value="UPDATE">
+  </container>
+</form>
+
+<a href="/products"> BACK </a>

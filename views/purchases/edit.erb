@@ -1,0 +1,35 @@
+
+<h3>Form to edit purchase / EDIT Here!</h3>
+
+<form action="/purchases/<%=@purchases[:id]%>" method="post">
+  <input type="hidden" name="_method" value="put">
+
+<container class="forms">
+ <label for="name">PURCHASE DATE</label>
+ <input class="field" id = "name" type="text" name="purchase[purchase_date]" value="<%=@purchases[:purchase_date]%>">
+ </container>
+
+<container class="forms">
+ <label> STATUS
+   <input class="field" id = "email" type="text" name="purchase[status]" value="<%=@purchases[:status]%>">
+ </label>
+  </container>
+
+<container class="forms">
+ <label> USERS ID
+   <input class="field" id = "address" type="text" name="purchase[users_id]" value="<%=@purchases[:users_id]%>">
+ </label>
+  </container>
+
+<container class="forms">
+ <label> PRODUCTS ID
+   <input class="field" id = "password" type="text" name="purchase[products_id]" value="<%=@purchases[:products_id]%>">
+ </label>
+  </container>
+
+<container class="forms">
+ <input id="submit" type="submit" value="UPDATE">
+  </container>
+</form>
+
+<a href="/purchases"> BACK </a>

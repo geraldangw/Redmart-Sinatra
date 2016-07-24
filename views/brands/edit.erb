@@ -1,0 +1,29 @@
+
+<h3>Form to edit brand / EDIT Here!</h3>
+
+<form action="/brands/<%=@brands[:id]%>" method="post">
+  <input type="hidden" name="_method" value="put">
+
+<container class="forms">
+ <label for="name">NAME</label>
+ <input class="field" id = "name" type="text" name="brand[name]" value="<%=@brands[:name]%>">
+ </container>
+
+<container class="forms">
+ <label> CATEGORY ID
+   <input class="field" id = "email" type="text" name="brand[category_id]" value="<%=@brands[:category_id]%>">
+ </label>
+  </container>
+
+<container class="forms">
+ <label> SUPPLIER
+   <input class="field" id = "address" type="text" name="brand[supplier]" value="<%=@brands[:supplier]%>">
+ </label>
+  </container>
+
+<container class="forms">
+ <input id="submit" type="submit" value="UPDATE">
+  </container>
+</form>
+
+<a href="/brands"> BACK </a>

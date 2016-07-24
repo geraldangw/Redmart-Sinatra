@@ -1,12 +1,44 @@
 <h3>Form to create new user / Register Here!</h3>
 
 <form action="/users" method="post">
- <label for="name">Name</label>
- <input id = "name" type="text" name="user[name]" value="">
+<container class="forms">
+ <label for="name">NAME</label>
+ <input class="field" id = "name" type="text" name="user[name]" value="">
+ </container>
 
- <label> Address
-   <input id = "address" type="text" name="user[address]" value="">
+<container class="forms">
+ <label> EMAIL
+   <input class="field" id = "email" type="text" name="user[email]" value="">
  </label>
+  </container>
 
- <input type="submit" value="Submit">
+<container class="forms">
+ <label> ADDRESS
+   <input class="field" id = "address" type="text" name="user[address]" value="">
+ </label>
+  </container>
+
+<container class="forms">
+ <label> PASSWORD
+   <input class="field" id = "password" type="text" name="user[password]" value="">
+ </label>
+  </container>
+
+<container class="forms">
+ <label> CC NUMBER
+   <input class="field" id = "cc_number" type="text" name="user[cc_number]" value="">
+ </label>
+  </container>
+
+<container class="forms">
+ <label> DATE JOINED
+   <input class="field" id = "date_joined" type="text" name="user[date_joined]" value="">
+ </label>
+  </container>
+
+<container class="forms">
+ <input id="submit" type="submit" value="Submit">
+  </container>
 </form>
+
+<a class="backsmall" href="../users"> BACK </a>

@@ -1,0 +1,32 @@
+<h3>Form to create new purchase/ ENTER A NEW PURCHASE Here!</h3>
+
+<form action="/purchases" method="post">
+<container class="forms">
+ <label for="name">PURCHASE DATE</label>
+ <input class="field" id = "name" type="text" name="purchase[purchase_date]" value="">
+ </container>
+
+<container class="forms">
+ <label> STATUS
+   <input class="field" id = "email" type="text" name="purchase[status]" value="">
+ </label>
+  </container>
+
+<container class="forms">
+ <label> USERS ID
+   <input class="field" id = "address" type="text" name="purchase[users_id]" value="">
+ </label>
+  </container>
+
+<container class="forms">
+ <label> PRODUCTS ID
+   <input class="field" id = "password" type="text" name="purchase[products_id]" value="">
+ </label>
+  </container>
+
+<container class="forms">
+ <input id="submit" type="submit" value="Submit">
+  </container>
+</form>
+
+<a class="backsmall" href="../purchases"> BACK </a>

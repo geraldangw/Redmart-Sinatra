@@ -1,0 +1,26 @@
+<h3>Form to create new category/ ENTER A NEW CATEGORY Here!</h3>
+
+<form action="/categories" method="post">
+<container class="forms">
+ <label for="name">NAME</label>
+ <input class="field" id = "name" type="text" name="category[name]" value="">
+ </container>
+
+<container class="forms">
+ <label> PARENT CATEGORY ID
+   <input class="field" id = "email" type="text" name="category[parent_category_id]" value="">
+ </label>
+  </container>
+
+<container class="forms">
+ <label> STATUS
+   <input class="field" id = "address" type="text" name="category[status]" value="">
+ </label>
+  </container>
+
+<container class="forms">
+ <input id="submit" type="submit" value="Submit">
+  </container>
+</form>
+
+<a class="backsmall" href="../categories"> BACK </a>

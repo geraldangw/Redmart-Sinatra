@@ -1,29 +1,27 @@
-<h2> Each User </h2>
+<h2> USER ID: <%= @users[:id] %> </h2>
 
 <p>
-  USER ID: <%= @users[:id] %>
+  NAME:  <%= @users[:name] %>
 </p>
 
 <p>
-  The name of the user is <%= @users[:name] %>
+  EMAIL: <%= @users[:email] %>
 </p>
 
 <p>
-  His/her email address is <%= @users[:email] %>
+  ZIP CODE: <%= @users[:address] %>
 </p>
 
 <p>
-  He/She lives at zip code: <%= @users[:address] %>
+  PASSWORD: <%= @users[:password] %>
 </p>
 
 <p>
-  His password(ssshhhh) is: <%= @users[:password] %>
+  CC NUMBER: <%= @users[:cc_number] %>
 </p>
 
 <p>
-  Sissy number is: <%= @users[:cc_number] %>
+  JOINED ON <%= @users[:date_joined] %>
 </p>
 
-<p>
-  He/She joined on <%= @users[:date_joined] %>
-</p>
+<a id="backtwo" href="../users"> BACK </a>

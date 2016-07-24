@@ -1,0 +1,32 @@
+<h3>Form to create new product/ ENTER A NEW PRODUCT Here!</h3>
+
+<form action="/products" method="post">
+<container class="forms">
+ <label for="name">NAME</label>
+ <input class="field" id = "name" type="text" name="product[name]" value="">
+ </container>
+
+<container class="forms">
+ <label> BRAND ID
+   <input class="field" id = "email" type="text" name="product[brand_id]" value="">
+ </label>
+  </container>
+
+<container class="forms">
+ <label> CATEGORY ID
+   <input class="field" id = "address" type="text" name="product[category_id]" value="">
+ </label>
+  </container>
+
+<container class="forms">
+ <label> PRICE
+   <input class="field" id = "password" type="text" name="product[price]" value="">
+ </label>
+  </container>
+
+<container class="forms">
+ <input id="submit" type="submit" value="Submit">
+  </container>
+</form>
+
+<a class="backsmall" href="../products"> BACK </a>

@@ -1,50 +1,120 @@
-
 a {
   margin: 2%;
   margin-left: 3%;
+  margin-right: -2%;
+  text-decoration: none;
+  color: #cccccc;
+  border: 1px solid #cccccc;
+  padding: 7px 10px;
+  border-radius: 3px;
 }
-
+a:hover {
+  background-color: red;
+}
 h3, form {
   margin-left: 3%;
 }
-
-body {
-background-color: rgb(152, 10, 31);
-color: rgb(228, 191, 189);
-font-family: Verdana;
+input {
+  border: 1px solid rgb(228, 191, 189);
+  text-align: left;
+  border-radius: 4px;
+  padding: 6px;
+  margin-left: 3%;
+  color: black;
+  font-family: 'Dosis', sans-serif;
+  font-size: 15px;
 }
-    table {
-        border-collapse: collapse;
-        width: 80%;
-        margin-left: 3%;
-    }
-    td,
-    th,
-    tr {
-        border: 1px solid rgb(228, 191, 189);
-        font-size: 15px;
-        font-family: Arial;
-    }
+input:hover {
+  color: black;
+}
+#submit, #back {
+  margin-left: -4%;
+  background-color: red;
+  display: inline;
+}
+label {
+  margin-left: -4%;
+}
+body {
+  background-color: rgb(152, 10, 31);
+  color: rgb(228, 191, 189);
+  font-family: 'Dosis', sans-serif;
+}
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin-left: 3%;
+  margin-top: 2%;
+}
+img {
+  height: 5%;
+  width: 8%;
+  border-radius: 6px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 5%;
+}
+td, th, tr {
+  border: 1px solid rgb(228, 191, 189);
+  font-size: 15px;
+  text-align: center;
+}
+li {
+  display: inline-block;
+  padding: 8px 30px;
+  color: rgb(228, 191, 189);
+}
+tr {
+  background-color: white;
+  color: rgb(152, 10, 31);
+}
+ul {
+  height: 50px;
+  margin-top: 5%;
+  margin-right: 2%;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 2%;
+}
+th {
+  background-color: rgb(186, 89, 95);
+  padding: 7px;
+  height: 40px;
+  color: white;
+}
+.tablebutton {
+  border: none;
+}
+.tablebutton:hover {
+  color: green;
+  background-color: transparent;
+}
+.forms {
+  display: block;
+  margin: 2%;
+  margin-left: 4%;
+}
+#delete {
+  border: 0px;
+  background-color: transparent;;
+  color: red;
+}
+.field {
+  width: 350px;
+}
+p {
+  text-align: center;
+}
 
-    li {
-      display: inline-block;
-      padding: 12px 50px;
-      color: rgb(228, 191, 189);
-    }
-
-    ul {
-      border: 1px solid rgb(228, 191, 189);
-      height: 50px;
-      margin-top: 2%;
-      margin-left: 2%;
-      margin-right: 2%;
-      text-align: center;
-    }
-
-    h1, h2 {
-      margin-left: 35px;
-    }
-
-    p {
-      margin-left: 3%;
-    }
+#backtwo {
+  margin: auto;
+  margin-top: 80px;
+  display: inline-block;
+  margin-left: 620px;
+}
+.backsmall {
+  margin-left: 3.3%;
+}

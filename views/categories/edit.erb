@@ -1,0 +1,29 @@
+
+<h3>Form to edit category / EDIT Here!</h3>
+
+<form action="/categories/<%=@categories[:id]%>" method="post">
+  <input type="hidden" name="_method" value="put">
+
+<container class="forms">
+ <label for="name">NAME</label>
+ <input class="field" id = "name" type="text" name="category[name]" value="<%=@categories[:name]%>">
+ </container>
+
+<container class="forms">
+ <label> PARENT CATEGORY ID
+   <input class="field" id = "email" type="text" name="category[parent_category_id]" value="<%=@categories[:parent_category_id]%>">
+ </label>
+  </container>
+
+<container class="forms">
+ <label> STATUS
+   <input class="field" id = "address" type="text" name="category[status]" value="<%=@categories[:status]%>">
+ </label>
+  </container>
+
+<container class="forms">
+ <input id="submit" type="submit" value="UPDATE">
+  </container>
+</form>
+
+<a href="/categories"> BACK </a>

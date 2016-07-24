@@ -1,0 +1,47 @@
+
+<h3>Form to edit user / EDIT Here!</h3>
+
+<form action="/users/<%=@users[:id]%>" method="post">
+  <input type="hidden" name="_method" value="put">
+
+<container class="forms">
+ <label for="name">NAME</label>
+ <input class="field" id = "name" type="text" name="user[name]" value="<%=@users[:name]%>">
+ </container>
+
+<container class="forms">
+ <label> EMAIL
+   <input class="field" id = "email" type="text" name="user[email]" value="<%=@users[:email]%>">
+ </label>
+  </container>
+
+<container class="forms">
+ <label> ADDRESS
+   <input class="field" id = "address" type="text" name="user[address]" value="<%=@users[:address]%>">
+ </label>
+  </container>
+
+<container class="forms">
+ <label> PASSWORD
+   <input class="field" id = "password" type="text" name="user[password]" value="<%=@users[:password]%>">
+ </label>
+  </container>
+
+<container class="forms">
+ <label> CC NUMBER
+   <input class="field" id = "cc_number" type="text" name="user[cc_number]" value="<%=@users[:cc_number]%>">
+ </label>
+  </container>
+
+<container class="forms">
+ <label> DATE JOINED
+   <input class="field" id = "date_joined" type="text" name="user[date_joined]" value="<%=@users[:date_joined]%>">
+ </label>
+  </container>
+
+<container class="forms">
+ <input id="submit" type="submit" value="UPDATE">
+  </container>
+</form>
+
+<a class="backsmall" href="/users"> BACK </a>

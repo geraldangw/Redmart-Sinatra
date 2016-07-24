@@ -1,50 +1,49 @@
 <h2>
-    USERS
+    PRODUCTS
 </h2>
 
 <a href="./">
     HOME
 </a>
-<a id="adduser" href="./users/new">
-    ADD USER
+<a id="adduser" href="./products/new">
+    ADD PRODUCT
 </a>
 
 <table class="table">
     <thead>
         <tr>
-            <th>User ID</th>
+            <th>Product ID</th>
             <th>Name</th>
-            <th>Email</th>
+            <th>Brand ID</th>
         </tr>
     </thead>
     <tbody>
-        <% @users.sort.each do |user| %>
+        <% @products.sort.each do |product| %>
         <tr>
             <td>
-                <%= user[:id] %>
+                <%= product[:id] %>
             </td>
             <td>
-                <%= user[:name] %>
+                <%= product[:name] %>
             </td>
             <td>
-                <%= user[:email] %>
+                <%= product[:brand_id] %>
             </td>
             <td>
-                <a class="tablebutton" href="/users/<%=user[:id]%>">
+                <a class="tablebutton" href="/products/<%=product[:id]%>">
                     Show
                 </a>
             </td>
             <td>
-                <a class="tablebutton" href="/users/<%= user[:id] %>/edit">Edit</a>
+                <a class="tablebutton" href="/products/<%= product[:id] %>/edit">Edit</a>
             </td>
             <td>
-                <form action="/users/<%=user[:id]%>" method="post">
+                <form action="/products/<%=product[:id]%>" method="post">
                     <input id="delete" type="hidden" name="_method" value="Delete">
                     <input id="delete" type="submit" value="Delete">
                 </form>
             </td>
 
-            <!-- <a href="users/<%=user[:id]%>"> Delete </a> -->
     </tr>
     <% end %>
 </tbody>

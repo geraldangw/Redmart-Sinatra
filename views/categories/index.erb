@@ -1,50 +1,49 @@
 <h2>
-    USERS
+    CATEGORIES
 </h2>
 
 <a href="./">
     HOME
 </a>
-<a id="adduser" href="./users/new">
-    ADD USER
+<a id="adduser" href="./categories/new">
+    ADD CATEGORY
 </a>
 
 <table class="table">
     <thead>
         <tr>
-            <th>User ID</th>
+            <th>Category ID</th>
             <th>Name</th>
-            <th>Email</th>
+            <th>Parent Category</th>
         </tr>
     </thead>
     <tbody>
-        <% @users.sort.each do |user| %>
+        <% @categories.sort.each do |category| %>
         <tr>
             <td>
-                <%= user[:id] %>
+                <%= category[:id] %>
             </td>
             <td>
-                <%= user[:name] %>
+                <%= category[:name] %>
             </td>
             <td>
-                <%= user[:email] %>
+                <%= category[:parent_category_id] %>
             </td>
             <td>
-                <a class="tablebutton" href="/users/<%=user[:id]%>">
+                <a class="tablebutton" href="/categories/<%=category[:id]%>">
                     Show
                 </a>
             </td>
             <td>
-                <a class="tablebutton" href="/users/<%= user[:id] %>/edit">Edit</a>
+                <a class="tablebutton" href="/categories/<%= category[:id] %>/edit">Edit</a>
             </td>
             <td>
-                <form action="/users/<%=user[:id]%>" method="post">
+                <form action="/categories/<%=category[:id]%>" method="post">
                     <input id="delete" type="hidden" name="_method" value="Delete">
                     <input id="delete" type="submit" value="Delete">
                 </form>
             </td>
 
-            <!-- <a href="users/<%=user[:id]%>"> Delete </a> -->
     </tr>
     <% end %>
 </tbody>
