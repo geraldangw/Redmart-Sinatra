@@ -56,13 +56,14 @@ img {
 }
 td, th, tr {
   border: 1px solid rgb(228, 191, 189);
-  font-size: 15px;
+  font-size: 7px;
   text-align: center;
 }
 li {
   display: inline-block;
   padding: 8px 30px;
   color: rgb(228, 191, 189);
+  margin: 3%;
 }
 tr {
   background-color: white;
@@ -70,7 +71,7 @@ tr {
 }
 ul {
   height: 50px;
-  margin-top: 5%;
+  margin-top: 6%;
   margin-right: 2%;
   text-align: center;
 }
